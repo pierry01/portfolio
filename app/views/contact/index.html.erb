@@ -1,0 +1,36 @@
+<head>
+	<title>Contato - Jean Mendonça</title>
+</head>
+
+<body>
+	<div class="main">
+		<ul class="path">
+			<li><%= link_to 'Home', root_path %></li>
+			<li>></li>
+			<li>Contato</li>
+		</ul>
+
+		<h1>Contato</h1>
+
+		<h3>E-mail:</h3>
+		<p>pierrybm@gmail.com</p>
+
+		<h3>Telefone:</h3>
+		<p>(32)98428-9304</p>
+
+		<h3>Redes Sociais:</h3>
+		<%= link_to 'https://www.linkedin.com/in/jean-pierry/', target: 'blank' do %>
+		  <%= image_tag('Social-Icons/128/LinkedIn.png', class: 'social-img', alt: 'Link para o LinkedIn') %>
+		<% end %>
+		
+		<%= link_to 'https://www.instagram.com/jean_pierry_18/', target: 'blank' do %>
+		  <%= image_tag('Social-Icons/128/Instagram.png', class: 'social-img', alt: 'Link para o Instagram') %>
+		<% end %>
+		
+		<%= link_to 'https://www.facebook.com/jeanpierryxs', target: 'blank' do %>
+		  <%= image_tag('Social-Icons/128/Facebook.png', class: 'social-img', alt: 'Link para o Facebook') %>
+		<% end %>
+
+		<br><br><br><%= link_to 'Voltar ao início', root_path, class: 'back-link' %>
+	</div>
+</body>

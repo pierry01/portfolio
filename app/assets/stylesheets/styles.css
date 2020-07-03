@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif, cursive;
+}
+
+a {
+  color: #f27609;
+}
+
+body {
+  background-color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  color: white;
+  background-color: #2b2b2b;
+  height: 3em;
+
+  animation-name: navigation;
+  animation-duration: 1s;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation .threeline-icon {
+  display: none;
+}
+
+.navigation .threeline-icon:hover {
+  color: #f27609;
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  color: #f27609
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: right;
+  height: 3em;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 3em;
+  font-weight: 100;
+}
+
+.cover {
+  color: white;
+}
+
+.cover span {
+  color: #f27609;
+  display: block;
+}
+
+.cover div {
+  display: inline-block;
+  height: 40em;
+}
+
+.profile-pic {
+  width: 40%;
+  text-align: center;
+
+  animation-name: profile-cover;
+  animation-duration: 2s;
+}
+
+.profile-pic img {
+  width: 20em;
+  border-radius: 50%;
+  margin-top: 9em;
+}
+
+.profile-title {
+  vertical-align: top;
+  width: 59%;
+
+  animation-name: title-cover;
+  animation-duration: 2s;
+}
+
+.personal-data {
+  margin-top: 5em;
+}
+
+.profile-title h1 {
+  font-size: 3em;
+  margin-top: 6em;
+  text-transform: uppercase;
+}
+
+.profile-title h2 {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.main {
+  padding: 2em;
+  text-align: center;
+
+  animation-name: container;
+  animation-duration: 1s;
+}
+
+.cv-img {
+  float: right;
+  border-radius: 50%;
+  max-width: 100%;
+  width: 27em;
+  margin: 2em 0;
+}
+
+.main h1 {
+  margin-top: 1em;
+  color: white;
+  font-weight: normal;
+}
+
+.main h2 {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.main h3 {
+  color: #f27609;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 3em;
+}
+
+.main p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 100;
+  line-height: 1.5em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.about-me {
+  margin-top: 5em;
+}
+
+.about-me p {
+  text-align: left;
+  text-align-last: left;
+}
+
+.education {
+  margin-top: 5em;
+}
+
+.contact {
+  margin-top: 5em;
+}
+
+.experience {
+  margin-top: 5em;
+}
+
+.education h3 {
+  margin-bottom: -.5em;
+}
+
+.skills {
+  margin-top: 5em
+}
+
+.path {
+  list-style: none;
+  color: grey;
+}
+
+.path li {
+  display: inline-block;
+}
+
+.path a {
+  color: white;
+}
+
+.social-img {
+  width: 3%;
+  margin-right: .4em;
+}
+
+.thumb {
+  height: 20em;
+  width: 20em;
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.thumb a {
+  text-decoration: none;
+}
+
+.blackbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  padding-top: 40%;
+  transition: .3s;
+}
+
+.blackbox:hover {
+  opacity: .7;
+  transition: .3s;
+}
+
+.blackbox-text {
+  text-align: center;
+}
+
+.blackbox-text h1 {
+  font-size: 1.5em;
+  color: #f27609;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: .3em;
+}
+
+.blackbox-text h2 {
+  text-transform: none;
+  font-weight: 100;
+  margin: 0;
+}
+
+.foto-trabalhos {
+  width: 90%;
+}
+
+@keyframes profile-cover {
+  0% {
+    opacity: 0;
+    transform: translate(0, 3em)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+
+@keyframes title-cover {
+  0% {
+    opacity: 0;
+    transform: translate(0, -3em)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+
+@keyframes navigation {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes container {
+  0% {
+    transform: translate(-2em, 0)
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation li {
+    display: none;
+  }
+
+  .navigation li.threeline-icon {
+    display: inline-block;
+  }
+
+  .cover div {
+    display: block;
+    height: auto;
+  }
+
+  .profile-title {
+    width: 100%;
+    text-align-last: center;
+  }
+
+  .profile-title h1 {
+    margin-top: 1em;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .profile-pic img {
+    margin-top: 0;
+    max-width: 80%;
+    margin-top: 1em;
+  }
+
+  .profile-pic {
+    width: 100%;
+  }
+
+  .main a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .main p {
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .about-me p {
+    text-align: left;
+  }
+
+  .cv-img {
+    float: none;
+    width: 70%;
+    margin-bottom: .1em;
+  }
+
+  .thumb {
+    max-width: 100%;
+    background-size: auto 100%;
+  }
+
+  .blackbox {
+    opacity: .7;
+  }
+
+  .menujs {
+    height: auto;
+  }
+
+  .menujs ul {
+    height: auto;
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+  .menujs li {
+    display: block;
+    border-bottom: 1px solid grey;
+    width: 100%;
+  }
+}

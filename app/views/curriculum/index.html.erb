@@ -1,0 +1,108 @@
+<head>
+	<title>Currículo - Jean Mendonça</title>
+</head>
+
+<body>
+	<div class="main">
+		<ul class="path">
+			<li><%= link_to 'Home', root_path %></li>
+			<li>></li>
+			<li>Currículo</li>
+		</ul>
+
+		<h1>Currículo</h1>
+
+		<section class="personal-data">
+			<div class="personal-data-img">
+				<%= image_tag('curriculum.jpg', class: 'cv-img', alt: 'Jean Mendonça') %>
+			</div>
+
+			<div class="personal-data-info">
+				<h2>Dados Pessoais</h2>
+				<hr>
+
+				<h3>Nome:</h3>
+				<p>Jean Pierry de Souza Mendonça</p>
+
+				<h3>Data de Nascimento:</h3>
+				<p>23/06/1998</p>
+
+				<h3>Residência:</h3>
+				<p>Juiz de Fora - MG, Brasil</p>
+
+				<h3>Idiomas:</h3>
+				<p>Português (Nativo)</p>
+				<p>Inglês (Intermediário)</p>
+			</div>
+		</section>
+
+		<section class="about-me">
+			<h2>Sobre Mim</h2>
+			<hr>
+
+			<p>
+				Comecei os estudos para me tornar um Desenvolvedor Web em 2018, quando tive meu primeiro contato com HTML e CSS.
+				Tenho dois irmãos que atuam no mercado e isso sempre foi uma motivação para mim. Meu principal foco é atuar no
+				mercado Ruby on Rails.
+			</p>
+
+			<p>
+				Após me interessar pelo assunto e dedicar várias horas dos meus dias, decidi que iria trabalhar nessa área.
+			</p>
+
+			<p>
+				Desenvolvi este pequeno portfolio para apresentar meus projetos de maneira direta e com o código aberto.
+			</p>
+		</section>
+
+		<section class="education">
+			<h2>Educação</h2>
+			<hr>
+
+			<h3>01/2020 - Em andamento / Conclusão em 06/2020</h3>
+			<p>Sistemas de Informação / Primeira Graduação / Estácio de Sá</p>
+
+			<h3>10/2019 - 12/2019</h3>
+			<p>TDD com Ruby on Rails - Udemy</p>
+
+			<h3>07/2019 - 10/2019</h3>
+			<p>Ruby on Rails 5.x - Udemy</p>
+
+			<h3>05/2019 - 07/2019</h3>
+			<p>Ruby on Rails 4.x - Udemy</p>
+
+			<h3>02/2019 - 05/2019</h3>
+			<p>Backend Ruby on Rails + APP Mobile - Udemy</p>
+
+			<h3>10/2018 - 01/2019</h3>
+			<p>HTML5, CSS3 & JavaScript - Udemy</p>
+		</section>
+
+		<section class="skills">
+			<h2>Habilidades</h2>
+			<hr>
+
+			<h3>Ruby on Rails</h3>
+			<p>Capacidade de desenvolver diversos aplicativos AIO ou APIs separadas para consumo em outras linguagens.</p>
+
+			<h3>Excel Avançado</h3>
+			<p>Trabalho em equipe entre as ferramentas para trabalhar com informações precisas e de excelente qualidade.</p>
+
+			<h3>GitHub</h3>
+			<p>Excelente ferramenta para trabalhos em equipe.</p>
+
+			<h3>Digitação</h3>
+			<p>Habilidade de digitação ímpar. Frequentemente em testes online, fico no TOP-10 do país.</p>
+		</section>
+
+		<section class="contact">
+			<h2>Contato</h2>
+			<hr>
+
+			<p>pierrybm@gmail.com</p>
+			<p>+55(32)98428-9304</p>
+		</section>
+
+		<br><br><%= link_to 'Voltar ao início', root_path, class: 'back-link' %>
+	</div>
+</body>

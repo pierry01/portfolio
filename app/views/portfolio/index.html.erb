@@ -1,0 +1,28 @@
+<head>
+	<title>Portfolio - Jean Mendonça</title>
+</head>
+
+<body>
+  <div class="main">
+		<ul class="path">
+			<li><%= link_to 'Home', root_path %></li>
+			<li>></li>
+			<li>Portfolio</li>
+		</ul>
+
+		<h1>Portfolio</h1>
+
+		<div class="thumb" style="background-image: url(/assets/ccb.jpg)">
+			<a href="webdesign-ccb.html">
+				<div class="blackbox">
+					<div class="blackbox-text">
+						<h1>Pacific Star</h1>
+						<h2>Web Design</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<br><br><br><%= link_to 'Voltar ao início', root_path, class: 'back-link' %>
+	</div>
+</body>
